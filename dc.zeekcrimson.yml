@@ -7,6 +7,7 @@ services:
     volumes:
      - /opt/zeek/logs:/usr/local/zeek-3.0.0/logs
      # - /opt/zeek/config:/usr/local/zeek-3.0.0/etc
+     - /opt/zeek/config/site:/usr/local/zeek-3.0.0/share/zeek/site/
      - /opt/zeek/pcap:/pcap
     working_dir: /usr/local/zeek-3.0.0/logs
     cap_add:
