@@ -14,3 +14,4 @@ services:
       - NET_RAW #or NET_ADMIN
     network_mode: "host"
     command: zeek -i ens33 -C
+    # command: zeek -i ens192 -C -e 'redef LogAscii::use_json=T;' ### to log JSON for ELASTIC ECS SIEM
