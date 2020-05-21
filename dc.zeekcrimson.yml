@@ -15,3 +15,4 @@ services:
     network_mode: "host"
     command: zeek -i ens33 -C
     # command: zeek -i ens192 -C -e 'redef LogAscii::use_json=T;' ### to log JSON for ELASTIC ECS SIEM
+    # command: zeek -i ens192 -i ens224 -C tuning/json-logs -C protocols/smb/log-cmds
